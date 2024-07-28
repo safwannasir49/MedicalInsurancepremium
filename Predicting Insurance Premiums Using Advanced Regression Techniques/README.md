@@ -84,7 +84,7 @@ if __name__ == '__main__':
         <li>Deploying the model to a cloud platform like AWS, Google Cloud, or Heroku for scalability and robustness.</li>
     </ul>
     <h2>Repository</h2>
-    <p><a href="https://github.com/safwannasir49/insurancepremiumprediction">GitHub Repository</a></p>
+    <p><a href="https://github.com/safwannasir49/MedicalInsurancepremium/tree/main/Predicting%20Insurance%20Premiums%20Using%20Advanced%20Regression%20Techniques">GitHub Repository</a></p>
     <p>Feel free to clone this repository and experiment with the code. Contributions and suggestions are welcome!</p>
 </body>
 </html>
