@@ -42,6 +42,10 @@
     <li>
       <ul><p>Cross-Validation R2 Scores - Linear plot</p>
       <img src="Output/cross-r2.png"></ul>
+      <ul><p>Cross-Validation R2 Scores - Box plot</p>
+      <img src="Output/box.png"></ul>
+      <ul><p>Cross-Validation R2 Scores - Histogram plot</p>
+      <img src="Output/hist.png"></ul>
     </li>
     <p><pre><code>Cross-Validation R2 Scores: [0.59036583 0.64863765 0.60600779 0.61931094 0.55601499 0.55986759
  0.62484532 0.61195018 0.54833147 0.67251033]
