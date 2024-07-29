@@ -37,6 +37,15 @@
     </ul>
     <h3>Model Evaluation</h3>
     <p>The models are evaluated using metrics such as Mean Absolute Error (MAE), Mean Squared Error (MSE), Root Mean Squared Error (RMSE), and R² score.</p>
+    <img src="Output/download.png">
+    <h3>Cross Validation</h3>
+    <li>
+      <ul><p>Cross-Validation R2 Scores - Linear plot</p>
+      <img src="Output/cross-r2.png"></ul>
+    </li>
+    <p><pre><code>Cross-Validation R2 Scores: [0.59036583 0.64863765 0.60600779 0.61931094 0.55601499 0.55986759
+ 0.62484532 0.61195018 0.54833147 0.67251033]
+Mean Cross-Validation R2 Score: 0.6037842088000064</code></pre></p>
     <h2>Deployment</h2>
     <p>The trained model is deployed using Flask. The Flask application provides an API endpoint for making predictions.</p>
     <h3>Running the Flask Application</h3>
