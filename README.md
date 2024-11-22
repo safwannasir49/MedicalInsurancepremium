@@ -50,7 +50,8 @@
     <p><pre><code>Cross-Validation R2 Scores: [0.59036583 0.64863765 0.60600779 0.61931094 0.55601499 0.55986759
  0.62484532 0.61195018 0.54833147 0.67251033]
 Mean Cross-Validation R2 Score: 0.6037842088000064</code></pre></p>
-   # Medical Insurance Premium Prediction
+
+#  Medical Insurance Premium Prediction - Deployment
 
 This repository predicts medical insurance premiums using a machine learning model and deploys an interactive web application using Streamlit.
 
