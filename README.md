@@ -91,7 +91,7 @@ if __name__ == '__main__':
     <br>
     <h2>Output</h2>
     <p align="left">
-  <img src="Output/outputkp.png" alt="Output Image" width="80%">
+  <img src="Output/outputkp.png" alt="Output Image" width="100%">
 </p>
     <h2>Conclusion</h2>
     <p>The project successfully predicts insurance premiums using advanced regression techniques. The deployed model can be accessed via a REST API for real-time predictions.</p>
