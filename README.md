@@ -50,45 +50,32 @@
     <p><pre><code>Cross-Validation R2 Scores: [0.59036583 0.64863765 0.60600779 0.61931094 0.55601499 0.55986759
  0.62484532 0.61195018 0.54833147 0.67251033]
 Mean Cross-Validation R2 Score: 0.6037842088000064</code></pre></p>
-    <h2>Deployment</h2>
-    <p>The trained model is deployed using Flask. The Flask application provides an API endpoint for making predictions.</p>
-    <h3>Running the Flask Application</h3>
-    <ol>
-        <li>Save the model:
-            <pre><code>import joblib
-joblib.dump(model, 'model.pkl')</code></pre>
-        </li>
-        <li>Create <code>app.py</code>:
-            <pre><code>from flask import Flask, request, jsonify
-import joblib
-import numpy as np
+   # Medical Insurance Premium Prediction
 
-# Load the model
-model = joblib.load('model.pkl')
+This repository predicts medical insurance premiums using a machine learning model and deploys an interactive web application using Streamlit.
 
-app = Flask(__name__)
+## How to Run
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/safwannasir49/MedicalInsurancepremium.git
+    cd MedicalInsurancepremium
+    ```
+2. Install dependencies:
+    ```bash
+    pip install -r requirements.txt
+    ```
+3. Run the application:
+    ```bash
+    streamlit run app.py
+    ```
 
-@app.route('/predict', methods=['POST'])
-def predict():
-    # Get the data from the POST request
-    data = request.get_json(force=True)
-    # Convert data into a NumPy array or DataFrame
-    features = np.array(data['features']).reshape(1, -1)
-    # Make a prediction
-    prediction = model.predict(features)
-    # Return the result as JSON
-    return jsonify({'prediction': prediction[0]})
-if __name__ == '__main__':
-    app.run(debug=True)</code></pre>
-        </li>
-        <li>Run the Flask server:
-            <pre><code>python app.py</code></pre>
-        </li>
-        <li>Test the API using <code>curl</code>:
-            <pre><code>curl -X POST -H "Content-Type: application/json" -d '{"features": [value1, value2, ...]}' http://127.0.0.1:5000/predict</code></pre>
-        </li>
-    </ol>
-    <br>
+## Files
+- **`app.py`**: Main application script for Streamlit.
+- **`MIPML.pkl`**: Pre-trained model file.
+- **`Medical_Insurance_Premium_Prediction.ipynb`**: Jupyter Notebook for model training and EDA.
+- **`requirements.txt`**: List of dependencies.
+---
+  <br>
     <h2>Output</h2>
     <p align="left">
   <img src="Output/outputkp.png" alt="Output Image" width="100%">
